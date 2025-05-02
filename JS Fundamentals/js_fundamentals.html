@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learning JavaScript</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body onload="showDate()" id="body">
+        <div class="header">
+            <h1 id="heading">Learning JavaScript</h1>
+            <p>With Brad Traversy</p>
+        </div>
+        <div class="container">
+            <!--<button onmouseout="clearDate()" onmouseover="showDate()">Show Date</button>
+            <h1 id="time"></h1>-->
+
+            <form method="post" action="something.php" name="myForm" onsubmit="return validateForm()">
+                <div>
+                    <label>First Name</label>
+                    <input type="text" name="firstName" id="firstName">
+                </div>
+                <br>
+                <div>
+                    <label>Last Name</label>
+                    <input type="text" name="lastName" id="lastName">
+                </div>
+                <br>
+                <!--<div>
+                    <label>Background</label>
+                    <select name="background" id="background" onchange="changeBackground(this)">
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                    </select>
+                </div>
+                <br>-->
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <script>
+           /*alert('Script Tags Work')*/
+          /* var number1 = 35;
+           var number2 = '40'; 
+           alert('My favorite number is ' + number1);*/
+
+           /*var colors = ['red', 'blue', 'green'];//One way to create an array
+           alert(colors[1]);
+           var colors = new Array('red', 'yellow', 'orange');//Another way to create an array
+           colors[3] = 'green';
+           colors.push('purple');//dot syntax
+           alert(colors[2]);*/
+           //console.log('hello');
+           /*for(var i = 0; i <= 20; i++){
+             console.log('I love the number ' +i);
+           }*/
+
+           /*var i = 0;
+           while(i < 10){
+               console.log(i);
+               i++;
+           }*/
+
+           /*var numbers = [33, 54, 76, 34, 2, 6];
+           numbers.forEach(function(number){
+            console.log(number);
+           });
+           for(var i=0; i<numbers.length; i++){
+            console.log(numbers[i]);
+           }
+           numbers.reverse();
+           for(var i=0; i<numbers.length; i++){
+            console.log(numbers[i]);
+           }*/
+
+
+           /*var var1 = 3;
+           var var2 = 4;
+           if(var1 == var2 || var1 == 3){
+            console.log('This is true');
+           } else {
+            console.log('This is false');
+           }*/
+
+           /*var fruit = 'apple';
+           switch(fruit){
+            case "banana":
+                alert('I hate bananas');
+                break;
+            case "apple":
+                alert('I love apples');
+                break;
+            case "orange":
+                alert('Oranges are okay');
+                break;
+            default:
+                alert('I love all other fruits');
+                break;    
+           }*/
+           
+           //Object Literal
+           /*var person = {
+            firstName: 'Brad',
+            lastName: 'Traversy',
+            age: 34,
+            children: ['Brianna', 'Nicholas'],
+            address: { //embedded object
+                street: 'SSS Something st',
+                city: 'Boston',
+                state:'MA'
+            },
+            fullName: function(){
+                return this.firstName +" "+ this.lastName;
+            } 
+           }
+           console.log(person.fullName());*/
+
+           //Object Constructor
+           /*var apple = new Object();
+           apple.color = 'red';
+           apple.shape = 'round';
+           apple.describe = function(){
+            return 'An apple is the color '+this.color+ ' and is the shape '+this.shape;
+           }
+           console.log(apple.describe());*/
+
+           //Constructor Pattern
+           /*function Fruit(name, color, shape){
+            this.name = name;
+            this.color = color;
+            this.shape = shape;
+            this.describe = function(){
+                return 'A '+this.name+ ' is the color '+this.color+ ' and is the shape '+this.shape;
+            }
+           }
+           //var apple = new Fruit('apple', 'red', 'round');
+           var melon = new Fruit('melon', 'green', 'round');
+
+           console.log(melon.describe());*/
+
+           /*var users = [
+            {
+                name: 'John Doe',
+                age: 30
+            },
+            {
+                name: 'Mark Smith',
+                age: 44
+            },
+            {
+                name: 'Shelly Williams',
+                age:20
+            }
+           ];
+           console.log(users[0].name);*/
+
+           /*function doClick(){
+            alert('You Clicked!');
+           }*/
+
+           /*function showDate(){
+            var time = document.getElementById('time');
+            time.innerHTML = Date();
+            
+           }
+           function clearDate(){
+            var time = document.getElementById('time');
+            time.innerHTML = '';
+           }*/
+
+           /*function changeBackground(x){
+            console.log(x.value);
+            var heading = document.getElementById('heading');
+            heading.style.color = x.value;
+
+           }*/
+
+          function validateForm(){
+            var firstName = document.forms["myForm"]["firstName"].value;
+            if(firstName == null || firstName == ""){
+                alert("First name is required");
+                return false;
+            }
+            if(firstName.length < 3 ){
+                alert("First name must be at least 3 chars");
+                return false;
+            }
+          } 
+
+        </script>
+    </body>
+</html>

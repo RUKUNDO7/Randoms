@@ -1,0 +1,12 @@
+//- doctype html 
+//- html 
+//-  head 
+//-   title Simple Web App 
+//-  body 
+extends layout 
+block content
+   h1 Welcome to the simple web app 
+   ul.list-group
+    each article, i in articles
+     li.list-group-item= article.title 
+    

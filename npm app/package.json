@@ -1,0 +1,14 @@
+{
+  "name": "npm-app",
+  "version": "1.0.0",
+  "description": "Simple sample app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rukundo",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "A simple beginner app",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon app"
+  },
+  "author": "RUKUNDO",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.14.1",
+    "pug": "^3.0.3"
+  }
+}
