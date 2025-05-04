@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
 //Article Schema
 let articleSchema = mongoose.Schema({

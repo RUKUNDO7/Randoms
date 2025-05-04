@@ -5,8 +5,10 @@
 //-  body 
 extends layout 
 block content
-   h1 Welcome to the simple web app 
-   ul.list-group
-    each article, i in articles
-     li.list-group-item= article.title 
-    
+  ul.list-group
+    if articles && articles.length
+      each article, i in articles
+        li.list-group-item
+          a(href="/article/" + article._id)= article.title
+    else
+      li.list-group-item No articles found.
